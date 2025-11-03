@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air Wand | BYTES Labs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fff; color: #222; scroll-behavior: smooth; }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { color: #2563eb; font-weight: 700; font-size: 1.6rem; }
+    header a { text-decoration: none; color: #555; font-weight: 500; transition: 0.3s; }
+    header a:hover { color: #2563eb; }
+
+    .hero {
+      background: linear-gradient(rgba(37,99,235,0.85), rgba(124,58,237,0.85)),
+                  url('https://images.unsplash.com/photo-1581091214901-7c3bba65c9e1?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 160px 60px 100px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+
+    .content {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .details {
+      flex: 1 1 500px;
+      line-height: 1.8;
+    }
+
+    .details h2 { font-size: 2rem; color: #111; margin-bottom: 15px; }
+    .details p { color: #444; margin-bottom: 25px; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .feature {
+      background: #f9f9f9;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .feature:hover { transform: translateY(-5px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+    .feature h3 { color: #2563eb; margin-bottom: 10px; }
+
+    .product-image {
+      flex: 1 1 400px;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      background: #2563eb;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-btn:hover { background: #1e40af; }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BYTES Labs</h1>
+    <a href="Home.html">Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <h1>Air Wand</h1>
+    <p>A motion-sensing Bluetooth wand that controls Windows devices using 3D gestures and dual click buttons.</p>
+  </section>
+
+  <section class="content">
+    <div class="details">
+      <h2>Overview</h2>
+      <p>The Air Wand is a next-generation motion-controlled device powered by the MPU6050 sensor. It detects 3D movement — top to bottom, left to right, front to back, and full 360° rotation — to control Windows devices through Bluetooth. Equipped with two buttons for left and right mouse clicks, it enables intuitive and hands-free control. Designed for innovation and creativity, the Air Wand blends gesture recognition and wireless technology to deliver a seamless control experience.</p>
+
+      <h2>Key Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>🌀 3D Motion Tracking</h3>
+          <p>Uses the MPU6050 sensor to detect full-range motion and orientation in real time.</p>
+        </div>
+        <div class="feature">
+          <h3>📶 Bluetooth Connectivity</h3>
+          <p>Wirelessly connects to Windows devices, enabling smooth and lag-free control.</p>
+        </div>
+        <div class="feature">
+          <h3>🎮 Dual Click Buttons</h3>
+          <p>Includes two tactile buttons acting as left and right mouse clicks for precise control.</p>
+        </div>
+      </div>
+
+      <a href="home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Air Wand Project" class="product-image" />
+  </section>
+
+  <footer>© 2025 BYTES Labs. All rights reserved.</footer>
+
+</body>
+</html>

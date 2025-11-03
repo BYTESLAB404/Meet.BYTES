@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RUSTY ARM 01 | BYTES Labs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fff; color: #222; scroll-behavior: smooth; }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { color: #2563eb; font-weight: 700; font-size: 1.6rem; }
+    header a { text-decoration: none; color: #555; font-weight: 500; transition: 0.3s; }
+    header a:hover { color: #2563eb; }
+
+    .hero {
+      background: linear-gradient(rgba(37,99,235,0.85), rgba(124,58,237,0.85)),
+                  url('https://images.unsplash.com/photo-1581091214901-7c3bba65c9e1?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 160px 60px 100px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+
+    .content {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .details {
+      flex: 1 1 500px;
+      line-height: 1.8;
+    }
+
+    .details h2 { font-size: 2rem; color: #111; margin-bottom: 15px; }
+    .details p { color: #444; margin-bottom: 25px; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .feature {
+      background: #f9f9f9;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .feature:hover { transform: translateY(-5px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+    .feature h3 { color: #2563eb; margin-bottom: 10px; }
+
+    .product-image {
+      flex: 1 1 400px;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      background: #2563eb;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-btn:hover { background: #1e40af; }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BYTES Labs</h1>
+    <a href="Home.html">Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <h1>RUSTY ARM 01</h1>
+    <p>A 3-DOF robotic arm controlled by dual joysticks for precise, smooth, and real-time movement.</p>
+  </section>
+
+  <section class="content">
+    <div class="details">
+      <h2>Overview</h2>
+      <p>RUSTY ARM 01 is a compact 3-servo robotic arm designed for precision and flexibility. It uses two analog joysticks to control three servo joints, allowing smooth, coordinated movement without automatic resets. Built for learning and experimentation, it demonstrates real-world robotics control and motion accuracy through a simple yet powerful interface.</p>
+
+      <h2>Key Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>🎮 Dual Joystick Control</h3>
+          <p>Enables intuitive, real-time control across three servo joints for smooth and accurate motion.</p>
+        </div>
+        <div class="feature">
+          <h3>⚙️ Stable Motion System</h3>
+          <p>Maintains consistent positioning without automatic reset, ensuring precision and stability.</p>
+        </div>
+        <div class="feature">
+          <h3>🦾 Compact & Efficient Design</h3>
+          <p>Lightweight and modular structure ideal for robotics learning, demos, and small-scale automation.</p>
+        </div>
+      </div>
+
+      <a href="home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1581091870622-4b8c3e3ef7f3?auto=format&fit=crop&w=800&q=80" alt="RUSTY ARM 01 Robotic Arm" class="product-image" />
+  </section>
+
+  <footer>© 2025 BYTES Labs. All rights reserved.</footer>
+
+</body>
+</html>
